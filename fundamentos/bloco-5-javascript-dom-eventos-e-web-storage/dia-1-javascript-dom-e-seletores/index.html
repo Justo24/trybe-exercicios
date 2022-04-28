@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Exercício 5.1</title>
+    
+    <style>
+      main, section {
+        border-color: black;
+        border-style: solid;
+      }
+
+      .title {
+        text-align: center;
+      }
+
+      .main-content {
+        background-color: yellow;
+      }
+
+      .main-content .center-content {
+        background-color: red;
+        width: 50%;
+        margin: 0 auto;
+      }
+
+      .main-content .center-content p {
+        font-style: italic;
+      }
+    </style>
+  </head>
+  <body>
+    <header> 
+      <h1 class="title">Exercício 5.1 - JavaEscripito </h1>
+    </header>    
+    <main class="main-content">
+      <section class="center-content">
+        <p>Texto padrão do nosso site</p>
+        <p>-----</p>
+        <p>Trybe</p>
+      </section>
+    </main>
+    <script>
+        function textChange() {
+            document.getElementsByTagName("p")[1].innerText = "Ganhando Dinheiro"
+        }
+        function colorChange() {
+            document.querySelector(".main-content").style.backgroundColor = "rgb(76,164,109)"
+        }
+        function colorChange2() {
+          document.querySelector(".center-content").style.backgroundColor = "white"
+        }
+        function textCorrector() {
+          document.getElementsByClassName("title")[0].innerText = "Exercício 5.1 - JavaScript"
+        }
+        function capitalP() {
+          document.getElementsByTagName("p")[2].innerText = "TRYBE"
+        }
+        function showContent() {
+          document.getElementsByClassName("center-content")
+        }
+        function returnP() {
+          document.querySelector(".center-content")
+        }
+    </script>
+  </body>
+</html>
